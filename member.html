@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <title>Family History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6e3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6c4f3d;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #8b5e3c;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #6c4f3d;
+            color: #ffffff;
+            text-align: center;
+            position: top;
+            width: 100%;
+        }
+
+
+
+        .timeline.horizontal {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+        .event {
+    flex: 0 0 calc(25% - 25%); 
+    box-sizing: border-box; 
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+
+        .timeline.horizontal .event {
+    position: relative; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px; 
+}
+        .timeline.horizontal .dot {
+    position: absolute;
+    top: -20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #000000;
+}
+        .event img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .timeline.horizontal .date {
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+        .timeline.horizontal .event p {
+    margin-top: 0; 
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我們這一家</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">家庭成員</a>
+        <a href="member.html">我們家的足跡</a>
+        <a href="talk.html">想說的話</a>
+    </nav>
+
+    <div class="timeline horizontal">
+        <div class="event">
+          <div class="dot"></div>
+          <span class="date">2004</span>
+          <p>父母走入愛情的墳墓</p>
+          <img src="wedding.JPG "alt="Member 1">
+        </div>
+        <div class="event">
+          <div class="dot"></div>
+          <span class="date">2004</span>
+          <p>花錢大魔王出生</p>
+          <img src="me born.PNG"alt="Member 1">
+        </div>
+        <div class="event">
+          <div class="dot"></div>
+          <span class="date">2008</span>
+          <p>有煩人的老弟陪伴</p>
+          <img src="滴滴born.JPG"alt="Member 1">
+        </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2013</span>
+            <p>洩氣小鴨</p>
+            <img src="IMG_3199.PNG"alt="Member 1">
+          </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2014</span>
+            <p>近距離接觸新鮮草莓</p>
+            <img src="草莓.png"alt="Member 1">
+          </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2015</span>
+            <p>第一次看雪</p>
+            <img src="snow.PNG"alt="Member 1">
+          </div>
+          <div class="event">
+            <div class="dot"></div>
+            <span class="date">2017</span>
+            <p>汪汪隊進入葉家</p>
+            <img src="IMG_2609.JPG" alt="Member 1">
+            </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2021</span>
+            <p>meow闖入我的生活</p>
+            <a href=喵.mp4><img src="IMG_1759.JPG" alt="Member 1"></a>
+            </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2022</span>
+            <p>突然到了九份</p>
+            <a href="九份.MP4"><img src="2022.JPG" alt="Member 1"></a>
+            </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2023</span>
+            <p>bee</p>
+            <img src="20231.JPG" alt="Member 1">
+            </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2023</span>
+            <p>人生中最長的滑梯</p>
+            <img src="20238.JPG" alt="Member 1">
+        </div>
+        <div class="event">
+            <div class="dot"></div>
+            <span class="date">2024</span>
+            <p>全家飛向大象很多的地方</p>
+            <img src="202410.JPG" alt="Member 1">
+            </div>            
+      </div>
+
+
+      
+      
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 
+          <a class="text-body" href="https://www.instagram.com/shan10_13/">shan</a>
+        </div>
+      </footer>
+</body>
+</html>
